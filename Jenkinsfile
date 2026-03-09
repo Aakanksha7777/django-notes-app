@@ -6,7 +6,7 @@ pipeline{
         stage("Code clone"){
             steps{
                 sh "whoami"
-            clone("https://github.com/LondheShubham153/django-notes-app.git","main")
+          git url: "https://github.com/Aakanksha7777/django-notes-app.git", branch:"main"
             }
         }
         stage("Code Build"){
